@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<p id="title">Get 1st non repeating letter</p>
+			<div id="content">
+				<p>Input a string
+					<br />
+					<input type="text" id="search" />
+				</p>
+				<button onclick="getFirstNonRepeating()" id="load" />Load</button>
+				<p id="results"></p>
+			</div>
+		</div>
+
+		<script>
+			function getFirstNonRepeating() {
+				var userInput = document.getElementById('search').value
+				var input = userInput.split('');
+				let result = "";
+				var counter = 0;
+				for (var x = 0; x < input.length; x++) {
+					if (userInput.indexOf(input[x]) == userInput.lastIndexOf(input[x])) {
+						console.log(`First non-repeating character is ${input[x]}`);
+						result = input[x];
+						break;
+					}
+				}
+				document.getElementById('results').innerHTML = result;
+			}
+		</script>
+	</body>
+
+</html>

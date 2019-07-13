@@ -1,9 +1,57 @@
-#img {
-  max-width: 100%;
-  display: block;
-  height: auto;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(255, 210, 190);
+  /* margin: 10px; */
 }
 
-#img-caption{
-	font-size: 100px;
+#main {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+#main a {
+ margin: auto;
+}
+
+#title{
+  text-align: center;
+  background-color: rgb(248, 210, 196);
+  font-size: 40px;
+  padding: 20px;
+  margin: auto;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+}
+
+#img-div {
+  text-align: center;
+  margin: auto;
+}
+
+#tribute-info{
+  margin: auto;
+  padding: 25px;
+  text-align: justify;
+}
+
+#tribute-info h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#tribute-info #quote {
+  text-align: center;
+}
+
+ul {
+  list-style: square;
 }

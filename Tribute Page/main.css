@@ -3,7 +3,6 @@
 body{
   font-family: 'Open Sans', sans-serif;
   background: rgb(255, 210, 190);
-  /* margin: 10px; */
 }
 
 #main {
@@ -14,7 +13,7 @@ body{
  margin: auto;
 }
 
-#title{
+#title {
   text-align: center;
   background-color: rgb(248, 210, 196);
   font-size: 40px;
